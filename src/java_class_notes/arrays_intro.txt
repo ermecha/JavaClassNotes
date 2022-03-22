@@ -1,0 +1,85 @@
+Array
+	- special type of Variable
+	- hold multiple values
+	- size is fixed
+	- supports both primitive & non-primitive datatypes
+	- every element has index numbers
+
+Declaring Arrays
+	- There are 2 ways to declare one-dimensional arrays:
+
+		1. preferred way - specify the type, then specify [] and array variable name
+			- ex:
+			int[] scores;
+
+		2. specify the type, then specify array variable name which is followed by []
+			- ex:
+			int scores[];
+
+Instantiating aka initializing arrays
+	- To instantiate one dimensional array, use the keyword new, followed by type and then finally specify the size within square brackets [ ]
+		1. declare and instantiate in separate statements
+			- ex:
+			int[] scores;
+			scores = new int[4];
+
+		2. declare and instantiate in single statements
+			- ex:
+			int[] scores = new int[4];
+
+			String[] names = new String [5];
+
+Array Initialization
+	- like regular variables, Java also allows you to initialize an array's elements when you create the array
+	- ex:
+		int[] myList = {null,null,null,null,null};
+			- null means nothing, for objects
+	- arrays have a default value
+		- String  --> null
+		- int     --> 0
+		- double  --> 0.0
+		- boolean --> false by default
+
+Accessing Array Elements
+	- elements of array can be accessed by using []
+	- index number needs to be provided - starts with 0
+
+
+Assigning values to Array Elements
+	- ex:
+	arrayName[index] = value;
+
+	numbers[0] = 20;
+		numbers --> arrayRefVar
+		[0]     --> index
+		20      --> value
+
+How to read/use elements from Array
+	- using the name of the array and index number
+	- ex:
+		arrayName[index]--> gives back the element
+
+How to find number of elements?
+	- arrayName.length --> gives the amount of elements
+	- length() & length difference:
+		- length() is a String method to return the number of characters
+		- length is an array property that returns the number of elements
+
+How to print elements in array?
+	- must use Arrays Class
+		- Arrays Class is a utility class, which has some useful methods
+			- in order to use import it:
+			import java.util.Arrays; --> if not automatically imported
+			- Arrays.toString --> returns a String format of the whole array
+			- ex:
+			System.out.println(Arrays.toString(arrayName));
+
+
+
+
+
+
+
+
+
+
