@@ -1,0 +1,67 @@
+Arrays Class
+
+	- presented in "java.util" package
+
+			- to import --> import java.util.Arrays;
+
+	- methods:
+
+		- toString()
+
+		- sort()
+
+			- sorts the array in ascending order
+			- ex:
+
+				int [] numbers = {5, 4, 1, 3, 0, 2};
+
+				Arrays.sort(numbers);
+
+				prints --> [0, 1, 2, 3, 4, 5, 6]
+
+		- equals()
+
+			- compares two array objects if they have same elements in same order
+			- returns boolean
+			- ex:
+
+				char[] arr1 = {'a', 'b', 'c'};
+				char[] arr2 = {'a', 'b', 'c'};
+
+				System.out.println(Arrays.equals(arr1, arr2));
+
+		- copyOf()
+
+			- copies the specified array elements and sets new length
+			- returns new array
+			- ex:
+
+				int[] scores = {45, 55, 65, 75, 85};
+
+				int[] scores2 = Arrays.copyfOf(scores, 8);
+
+				scores2 prints -->
+				[45, 55, 65, 75, 85, 0, 0, 0]
+
+
+		- copyOfRange
+
+			- copies the specified range of the array
+			- returns new array
+			- ex:
+
+				char[] elements = {'A', 'B', 'C', 'D', 'E', 'F'};
+
+				char[] someElements = Arrays.copyOfRange(elements, 1, 4);
+
+				someElements prints -->
+				{'B', 'C', 'D'}
+
+
+
+
+
+
+
+
+
